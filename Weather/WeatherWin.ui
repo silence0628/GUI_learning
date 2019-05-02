@@ -123,7 +123,7 @@
    <sender>queryBtn</sender>
    <signal>clicked()</signal>
    <receiver>Form</receiver>
-   <slot>queryWeather()</slot>
+   <slot>repaint()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>161</x>
