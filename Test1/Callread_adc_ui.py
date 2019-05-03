@@ -49,7 +49,7 @@ class Show_adc(QWidget, Ui_Form):
     #生成随机数
     def random_num(self):
         num = random.uniform(0, 5) # 生成随机数，浮点类型
-        num1 = round(num, 2) # 控制随机数的精度，保留两位小数
+        num1 = round(num, 2)       # 控制随机数的精度，保留两位小数
         self.count_dot(num1)
 
     #初始化变量函数
@@ -79,7 +79,7 @@ class Show_adc(QWidget, Ui_Form):
             self.show_label.setText(str(value)) #设置标签显示当前值
             self.beg_x = 0    #初始化起点
             self.beg_y = 400  #初始化起点
-            if len(self.end_dot_list) >= (self.x_num+1): #X轴950化成95等份
+            if len(self.end_dot_list) >= (self.x_num+1):   #X轴950化成95等份
                 self.end_dot_list = self.end_dot_list[-self.x_num: ] #截取列表保留后95位
                 for i in self.end_dot_list: #遍历列表，每个点位X轴左移一位(即减小1)
                     i[0] -= self.x_num1
@@ -93,16 +93,21 @@ class Show_adc(QWidget, Ui_Form):
     #读取列表点位进行绘制
     def read_dot(self):
         #解析列表中点位进行移位计算
+        print('*'*80)
+
         for end_dot_list in self.end_dot_list:
+
             self.end_x = end_dot_list[0]        # X轴终点位置
             # 输入的数值为0-5.画布高度为400，画布左上角为0，0。改为左下角为0，0
             self.end_y = 400 - end_dot_list[1] * self.y_num1
+            print(self.end_x, self.end_y)
             self.uptate_show() #调用绘制图形
 
         self.show_read.setPixmap(self.picture) # 将图像显示在标签上
 
     #绘制函数
     def uptate_show(self):
+
         self.draw.begin(self.picture) # 开始在目标设备上面绘制
         self.draw.setPen(QPen(QColor("black"), 1))# 设置画笔颜色，粗细
         # 绘制一条指定了端点坐标的线，绘制从（self.beg_x,self.beg_y）到（self.end_x,self.end_y）的直线

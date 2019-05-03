@@ -13,22 +13,28 @@ class Ui_Form(object):
         Form.setObjectName("Form")
         Form.resize(970, 461)
         Form.setStyleSheet("background-color: rgb(85, 0, 255);")
+
         self.show_read = QtWidgets.QLabel(Form)
         self.show_read.setGeometry(QtCore.QRect(10, 50, 950, 400))
         self.show_read.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.show_read.setText("")
         self.show_read.setObjectName("show_read")
+
+        # 测量值当前值
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(430, 10, 91, 31))
         self.label.setStyleSheet("color: rgb(255, 255, 255);")
         self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label.setObjectName("label")
+
         self.show_label = QtWidgets.QLabel(Form)
         self.show_label.setGeometry(QtCore.QRect(520, 10, 111, 31))
         self.show_label.setStyleSheet("background-color: rgb(85, 255, 255);")
         self.show_label.setText("")
         self.show_label.setAlignment(QtCore.Qt.AlignCenter)
         self.show_label.setObjectName("show_label")
+
+        # 测量值实时反馈折线图显示实验
         self.label_3 = QtWidgets.QLabel(Form)
         self.label_3.setGeometry(QtCore.QRect(10, 10, 351, 31))
         font = QtGui.QFont()
@@ -40,6 +46,7 @@ class Ui_Form(object):
 "color: rgb(255, 255, 255);")
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
+
         self.start_Button = QtWidgets.QPushButton(Form)
         self.start_Button.setGeometry(QtCore.QRect(680, 5, 121, 41))
         font = QtGui.QFont()
@@ -55,6 +62,7 @@ class Ui_Form(object):
         font.setPointSize(20)
         font.setBold(True)
         font.setWeight(75)
+
         self.stop_Button.setFont(font)
         self.stop_Button.setStyleSheet("background-color: rgb(255, 0, 0);\n"
 "color: rgb(255, 255, 255);")
