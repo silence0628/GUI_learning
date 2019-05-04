@@ -6,11 +6,11 @@
 
   主要包括名为“基于深度学习平台的核素识别系统”，利用QT designer 和 Python结合在一起，制作一款简易式可操作的友好用户界面：该软件集成了三种方法：基于一维卷积神经网络、基于二维卷积神经网络以及基于奇异值分解和支持向量机的核素识别方法。界面简单，可操作性强。
   
-  ![](/home/hhh/PythonProject/GUI_learning/GUI_4/imgs/software-1.png)
+  ![](../GUI_4/imgs/software-1.png)
 
 以及第二版本
 
-![](/home/hhh/PythonProject/GUI_learning/GUI_4/imgs/software-2.png)
+​		![](../GUI_4/imgs/software-2.png)
 
 ，后续会将识别算法植入进去，
 
