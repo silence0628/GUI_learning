@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1180</width>
-    <height>600</height>
+    <width>998</width>
+    <height>919</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,73 +17,53 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>580</y>
+      <x>900</x>
+      <y>190</y>
       <width>80</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>打印</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="select_model">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>290</y>
-      <width>71</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>选取模型</string>
+     <string>数据可视化</string>
     </property>
    </widget>
    <widget class="QLabel" name="show_read_2">
     <property name="geometry">
      <rect>
-      <x>820</x>
-      <y>100</y>
-      <width>171</width>
-      <height>171</height>
+      <x>910</x>
+      <y>90</y>
+      <width>64</width>
+      <height>64</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(114, 159, 207);</string>
+     <string notr="true">background-color: rgb(245, 250, 246);</string>
     </property>
     <property name="text">
-     <string>二维信号显示图</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="show_read">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>100</y>
+      <x>170</x>
+      <y>60</y>
       <width>711</width>
       <height>171</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(114, 159, 207);</string>
+     <string notr="true">background-color: rgb(245, 250, 246);</string>
     </property>
     <property name="text">
-     <string>一维信号显示图</string>
+     <string/>
     </property>
    </widget>
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>290</y>
+      <x>170</x>
+      <y>280</y>
       <width>201</width>
       <height>27</height>
      </rect>
@@ -104,51 +84,31 @@
      </property>
     </item>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="select_txt_Button">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
-      <width>80</width>
-      <height>34</height>
+      <y>130</y>
+      <width>151</width>
+      <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>13</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="text">
      <string>选取文件</string>
     </property>
    </widget>
-   <widget class="QLabel" name="visualize">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>170</y>
-      <width>85</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>13</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>数据可视化</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>10</y>
+      <y>0</y>
       <width>351</width>
       <height>41</height>
      </rect>
@@ -167,13 +127,85 @@
      <string>基于深度学习的核素识别系统</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>60</y>
+      <width>111</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>一维能谱波形图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>60</y>
+      <width>91</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>二维能谱图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>320</y>
+      <width>521</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="feature_visualize_Button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>特征可视化</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="select_model">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>选取模型</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1180</width>
+     <width>998</width>
      <height>28</height>
     </rect>
    </property>
